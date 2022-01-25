@@ -1,0 +1,25 @@
+[package]
+name = "solana-stake-accounts"
+description = "Blockchain, Rebuilt for Scale"
+authors = ["Solana Maintainers <maintainers@solana.foundation>"]
+edition = "2018"
+version = "1.8.14"
+repository = "https://github.com/solana-labs/solana"
+license = "Apache-2.0"
+homepage = "https://solana.com/"
+documentation = "https://docs.rs/solana-stake-accounts"
+
+[dependencies]
+clap = "2.33.1"
+solana-clap-utils = { git = "https://github.com/solindex/clap-utils.git", version = "=1.8.14" }
+solana-cli-config = { git = "https://github.com/solindex/cli-config.git", version = "=1.8.14" }
+solana-client = { git = "https://github.com/solindex/client.git", version = "=1.8.14" }
+solana-remote-wallet = { git = "https://github.com/solindex/remote-wallet.git", version = "=1.8.14" }
+solana-sdk = { git = "https://github.com/solindex/sdk.git", version = "=1.8.14" }
+solana-stake-program = { git = "https://github.com/solindex/programs.git", version = "=1.8.14" }
+
+[dev-dependencies]
+solana-runtime = { git = "https://github.com/solindex/runtime.git", version = "=1.8.14" }
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
